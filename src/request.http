@@ -1,0 +1,5 @@
+###Добавление товара в корзину
+POST http://localhost:8080/store/order/add?id=1,2,3,2
+
+###Получение корзины
+GET http://localhost:8080/store/order/get
