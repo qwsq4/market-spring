@@ -12,7 +12,7 @@ public class MarketController{
     private final MarketService marketService;
 
     public MarketController(MarketService marketService) {
-        this.marketService = new MarketService();
+        this.marketService = marketService;
     }
 
     @PostMapping ("/store/order/add")

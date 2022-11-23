@@ -9,8 +9,8 @@ import java.util.List;
 public class MarketService {
     private final Cart cart;
 
-    public MarketService() {
-        this.cart = new Cart();
+    public MarketService(Cart cart) {
+        this.cart = cart;
     }
 
     public String addToCart(List<Integer> ids) {
