@@ -17,7 +17,7 @@ public class MarketController{
 
     @PostMapping ("/store/order/add")
     public String addProduct(@RequestParam("id") List<Integer> ids) {
-        return MarketService.addToCart(ids);
+        return marketService.addToCart(ids);
     }
 
     @GetMapping("/store/order/get")

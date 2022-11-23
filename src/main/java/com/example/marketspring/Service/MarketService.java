@@ -7,12 +7,13 @@ import java.util.List;
 
 @Service
 public class MarketService {
-    private static final Cart cart = new Cart();
+    private final Cart cart;
 
     public MarketService() {
+        this.cart = new Cart();
     }
 
-    public static String addToCart(List<Integer> ids) {
+    public String addToCart(List<Integer> ids) {
         cart.addToCart(ids);
         return cart.getCart().toString();
     }

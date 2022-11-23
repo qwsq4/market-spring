@@ -3,7 +3,6 @@ package com.example.marketspring.Component;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
